@@ -1,0 +1,94 @@
+<form class="container" [formGroup]="form">
+    <h2>Pizza</h2>
+
+    <label class="label">Margherita - quantity - size</label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Margherita.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="margherita"></app-counter-input>
+       <select class="quantity" formControlName="pizza_size">
+          <option value="" disabled selected hidden>Choose</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+       </select>
+    </div>
+
+    <label class="label">Pepperoni - quantity - size</label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Pepperoni.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="pepperoni"></app-counter-input>
+       <select class="quantity" formControlName="pizza_size">
+          <option value="" disabled selected hidden>Choose</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+       </select>
+    </div>
+
+    <label class="label">BBQ Pizza - quantity - size</label>
+    <div class="form-control-1">
+        <img class="pizza" src="assets/images/BBQ.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+        <app-counter-input class="quantity" formControlName="bbq"></app-counter-input>
+        <select class="quantity" formControlName="pizza_size">
+            <option value="" disabled selected hidden>Choose</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+    </div>
+
+    <label class="label">Hawaiian - quantity - size</label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Hawaiian.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="hawaiian"></app-counter-input>
+       <select class="quantity" formControlName="pizza_size">
+          <option value="" disabled selected hidden>Choose</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+       </select>
+    </div>
+
+    <label class="label" >Neapolitan - quantity - size</label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Neapolitan.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="neapolitan"></app-counter-input>
+       <select class="quantity" formControlName="pizza_size">
+          <option value="" disabled selected hidden>Choose</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+       </select>
+    </div>
+
+    <label class="label">Calzone - quantity - size</label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Calzone.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input placeholder="beer" class="quantity" formControlName="calzone"></app-counter-input>
+       <select class="quantity" formControlName="pizza_size">
+          <option value="" disabled selected hidden>Choose</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+       </select>
+    </div>
+
+    <label class="label">Capricciosa - quantity - size</label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Capricciosa.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="capricciosa"></app-counter-input>
+       <select class="quantity" formControlName="pizza_size">
+          <option value="" disabled selected hidden>Choose</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+       </select>
+    </div>
+
+    <pre class="form-values">
+      {{ form.value | json }}
+    </pre>
+
+</form>
+
+

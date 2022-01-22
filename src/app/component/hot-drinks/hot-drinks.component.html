@@ -1,0 +1,50 @@
+<form class="container" [formGroup]="form">
+    <h2>Hot drinks</h2>
+    
+    <label>Cappuccino: </label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Cappuccino.png" alt="coffe" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="cappuccino" style="width: 105px;" ></app-counter-input>
+    </div>
+
+    <label>Mocha: </label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Mocha.png" alt="coffee" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="mocha" style="width: 105px;" ></app-counter-input>
+    </div>
+
+    <label>Americano: </label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Americano.png" alt="coffee" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="americano" style="width: 105px;" ></app-counter-input>
+    </div>
+
+    <label>Frape: </label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Frape.png" alt="coffee" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="frape" style="width: 105px;" ></app-counter-input>
+    </div>
+
+    <label>Chocolate: </label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Chocolate.png" alt="chocolate" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="chocolate" style="width: 105px;" ></app-counter-input>
+    </div>
+
+    <label>Milk: </label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Milk.png" alt="milk" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="milk" style="width: 105px;" ></app-counter-input>
+    </div>
+
+    <label>English tea: </label>
+    <div class="form-control-1">
+       <img class="pizza" src="assets/images/Tea.png" alt="tea" width="42" height="42" style="vertical-align:middle">
+       <app-counter-input class="quantity" formControlName="tea" style="width: 105px;" ></app-counter-input>
+    </div>
+
+    <pre class="form-values">
+      {{ form.value | json }}
+    </pre>
+
+</form>

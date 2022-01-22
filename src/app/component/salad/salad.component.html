@@ -1,0 +1,85 @@
+<form class="container" [formGroup]="form">
+    <h2>Salad</h2>
+    <label class="label">Caesar - quantity - size</label>
+    <div class="form-control-1">
+        <img class="pizza" src="assets/images/Caesar.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+        <app-counter-input class="quantity" formControlName="caesar"></app-counter-input>
+        <select class="quantity" formControlName="salad_size">
+           <option value="" disabled selected hidden>gr</option>
+           <option value="200">200 gr.</option>
+           <option value="400">400 gr.</option>
+        </select>
+    </div>
+
+    <label class="label">Cobb - quantity - size</label>
+    <div class="form-control-1">
+        <img class="pizza" src="assets/images/Cobb.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+        <app-counter-input class="quantity" formControlName="cobb"></app-counter-input>
+        <select class="quantity" formControlName="salad_size" placeholder="gr">
+           <option value="" disabled selected hidden>gr.</option>
+           <option value="200">200 gr.</option>
+           <option value="400">400 gr.</option>
+        </select>
+    </div>
+
+    <label class="label">Caprese - quantity - size</label>
+    <div class="form-control-1">
+        <img class="pizza" src="assets/images/Caprese.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+        <app-counter-input class="quantity" formControlName="caprese"></app-counter-input>
+        <select class="quantity" formControlName="salad_size">
+           <option value="" disabled selected hidden>gr.</option>
+           <option value="200">200 gr.</option>
+           <option value="400">400 gr.</option>
+        </select>
+    </div>
+
+    <label class="label">Larb - quantity - size</label>
+    <div class="form-control-1">
+        <img class="pizza" src="assets/images/Larb.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+        <app-counter-input class="quantity" formControlName="larb"></app-counter-input>
+        <select class="quantity" formControlName="salad_size">
+           <option value="" disabled selected hidden>gr.</option>
+           <option value="200">200 gr.</option>
+           <option value="400">400 gr.</option>
+        </select>
+    </div>
+
+    <label class="label">Nicoise - quantity - size</label>
+    <div class="form-control-1">
+        <img class="pizza" src="assets/images/Nicoise.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+        <app-counter-input class="quantity" formControlName="nicoise"></app-counter-input>
+        <select class="quantity" formControlName="salad_size">
+           <option value="" disabled selected hidden>gr.</option>
+           <option value="200">200 gr.</option>
+           <option value="400">400 gr.</option>
+        </select>
+    </div>
+
+    <label class="label">Tabbouli - quantity - size</label>
+    <div class="form-control-1">
+        <img class="pizza" src="assets/images/Tabbouli.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+        <app-counter-input placeholder="beer" class="tabbouli" formControlName="calzone"></app-counter-input>
+        <select class="quantity" formControlName="salad_size">
+            <option value="" disabled selected hidden>gr.</option>
+           <option value="200">200 gr.</option>
+           <option value="400">400 gr.</option>
+        </select>
+    </div>
+
+    <label class="label">Waldorf - quantity - size</label>
+    <div class="form-control-1">
+        <img class="pizza" src="assets/images/Waldorf.png" alt="pizza" width="42" height="42" style="vertical-align:middle">
+        <app-counter-input class="quantity" formControlName="waldorf"></app-counter-input>
+        <select class="quantity" formControlName="salad_size">
+            <option value="" disabled selected hidden>gr.</option>
+           <option value="200">200 gr.</option>
+           <option value="400">400 gr.</option>
+        </select>
+    </div>
+    
+
+    <pre class="form-values">
+        {{ form.value | json }}
+    </pre>
+
+</form>

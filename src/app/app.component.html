@@ -1,0 +1,46 @@
+
+<div class="header">
+    <app-images></app-images>
+</div>
+<div class="background_images_right">
+    <app-background-images></app-background-images>
+</div>
+<div class="background_images_left">
+    <app-background-images-right></app-background-images-right>
+</div>
+
+<form class="container" [formGroup]="form">
+    <app-pizza class="app"></app-pizza>
+    <app-salad class="app"></app-salad>
+    <app-hot-drinks class="app"></app-hot-drinks>
+    <app-non-alcoholic class="app"></app-non-alcoholic>
+    <!--<app-alcohol></app-alcohol>-->
+</form>
+
+<form>
+    <div class="container" [formGroup]="form">
+        
+        <div class="row">
+            <div class="form-control-1">
+                <input type="text" placeholder="Full name:" formControlName="name" />
+            </div>
+            <div class="form-control-1">
+                <input type="text" placeholder="Streeet Address:" formControlName="address" />
+            </div>
+            <div class="form-control-1">
+                <input type="text" placeholder="Phone" formControlName="phone" />
+            </div>
+            <div class="button">
+                <button>Place order</button>
+            </div>
+        </div>
+
+        
+        
+        <pre class="form-values">
+            {{ form.value | json }}
+        </pre>
+        
+    </div>
+    
+</form>
